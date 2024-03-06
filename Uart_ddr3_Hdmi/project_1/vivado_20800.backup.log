@@ -1,0 +1,998 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Nov  5 11:03:28 2023
+# Process ID: 20800
+# Current directory: D:/three_verilog/Uart_ddr3_Hdmi/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18756 D:\three_verilog\Uart_ddr3_Hdmi\project_1\project_1.xpr
+# Log file: D:/three_verilog/Uart_ddr3_Hdmi/project_1/vivado.log
+# Journal file: D:/three_verilog/Uart_ddr3_Hdmi/project_1\vivado.jou
+# Running On: LAPTOP-H1858A6E, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16828 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2196.680 ; gain = 366.262
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse {D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/asyn_rst_syn.v D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/encode.v D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/VGA_Control.v D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/serializer_10_to_1.v D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/Hdmi_top.v}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 10
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Sun Nov  5 12:02:54 2023] Launched synth_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/runme.log
+add_files -fileset constrs_1 -norecurse D:/three_verilog/Uart_ddr3_Hdmi/rtl/pin.xdc
+reset_run synth_1
+INFO: [Project 1-1160] Copying file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/Uart2DDR3_top.dcp to D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -jobs 16
+[Sun Nov  5 12:18:18 2023] Launched synth_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/runme.log
+[Sun Nov  5 12:18:18 2023] Launched impl_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/impl_1/runme.log
+set_property -dict [list \
+  CONFIG.ARESETN.INSERT_VIP {0} \
+  CONFIG.BOARD_MIG_PARAM {Custom} \
+  CONFIG.C0_ARESETN.INSERT_VIP {0} \
+  CONFIG.C0_CLOCK.INSERT_VIP {0} \
+  CONFIG.C0_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C0_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C0_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C0_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C0_RESET.INSERT_VIP {0} \
+  CONFIG.C0_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C0_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C0_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C1_ARESETN.INSERT_VIP {0} \
+  CONFIG.C1_CLOCK.INSERT_VIP {0} \
+  CONFIG.C1_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C1_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C1_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C1_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C1_RESET.INSERT_VIP {0} \
+  CONFIG.C1_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C1_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C1_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C2_ARESETN.INSERT_VIP {0} \
+  CONFIG.C2_CLOCK.INSERT_VIP {0} \
+  CONFIG.C2_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C2_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C2_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C2_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C2_RESET.INSERT_VIP {0} \
+  CONFIG.C2_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C2_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C2_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C3_ARESETN.INSERT_VIP {0} \
+  CONFIG.C3_CLOCK.INSERT_VIP {0} \
+  CONFIG.C3_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C3_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C3_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C3_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C3_RESET.INSERT_VIP {0} \
+  CONFIG.C3_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C3_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C3_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C4_ARESETN.INSERT_VIP {0} \
+  CONFIG.C4_CLOCK.INSERT_VIP {0} \
+  CONFIG.C4_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C4_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C4_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C4_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C4_RESET.INSERT_VIP {0} \
+  CONFIG.C4_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C4_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C4_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C5_ARESETN.INSERT_VIP {0} \
+  CONFIG.C5_CLOCK.INSERT_VIP {0} \
+  CONFIG.C5_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C5_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C5_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C5_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C5_RESET.INSERT_VIP {0} \
+  CONFIG.C5_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C5_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C5_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C6_ARESETN.INSERT_VIP {0} \
+  CONFIG.C6_CLOCK.INSERT_VIP {0} \
+  CONFIG.C6_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C6_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C6_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C6_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C6_RESET.INSERT_VIP {0} \
+  CONFIG.C6_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C6_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C6_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C7_ARESETN.INSERT_VIP {0} \
+  CONFIG.C7_CLOCK.INSERT_VIP {0} \
+  CONFIG.C7_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C7_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C7_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C7_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C7_RESET.INSERT_VIP {0} \
+  CONFIG.C7_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C7_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C7_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.CLK_REF_I.INSERT_VIP {0} \
+  CONFIG.CLOCK.INSERT_VIP {0} \
+  CONFIG.DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.MIG_DONT_TOUCH_PARAM {Custom} \
+  CONFIG.MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.RESET.INSERT_VIP {0} \
+  CONFIG.RESET_BOARD_INTERFACE {Custom} \
+  CONFIG.RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.S0_AXI.INSERT_VIP {0} \
+  CONFIG.S0_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S1_AXI.INSERT_VIP {0} \
+  CONFIG.S1_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S2_AXI.INSERT_VIP {0} \
+  CONFIG.S2_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S3_AXI.INSERT_VIP {0} \
+  CONFIG.S3_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S4_AXI.INSERT_VIP {0} \
+  CONFIG.S4_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S5_AXI.INSERT_VIP {0} \
+  CONFIG.S5_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S6_AXI.INSERT_VIP {0} \
+  CONFIG.S6_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S7_AXI.INSERT_VIP {0} \
+  CONFIG.S7_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.SYSTEM_RESET.INSERT_VIP {0} \
+  CONFIG.SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.S_AXI.INSERT_VIP {0} \
+  CONFIG.S_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.XML_INPUT_FILE {mig_b.prj} \
+] [get_ips mig_7series_0]
+generate_target {instantiation_template} [get_files d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mig_7series_0'...
+generate_target all [get_files  D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mig_7series_0'...
+generate_target: Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2821.414 ; gain = 244.457
+export_ip_user_files -of_objects [get_files D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -sync -force -quiet
+reset_run mig_7series_0_synth_1
+launch_runs mig_7series_0_synth_1 -jobs 16
+[Sun Nov  5 12:22:00 2023] Launched mig_7series_0_synth_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/mig_7series_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -directory D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.ip_user_files -ipstatic_source_dir D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs mig_7series_0_synth_1]
+set_property needs_refresh false [get_runs wdata_fifo_w128x64_r128x64_synth_1]
+set_property needs_refresh false [get_runs rdata_fifo_w128x64_r16x512_synth_1]
+set_property needs_refresh false [get_runs clk_wiz_0_synth_1]
+set_property needs_refresh false [get_runs clk_wiz_1_synth_1]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/utils_1/imports/synth_1/Uart2DDR3_top.dcp with file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/Uart2DDR3_top.dcp
+launch_runs synth_1 -jobs 16
+[Sun Nov  5 12:24:59 2023] Launched synth_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Sun Nov  5 12:25:49 2023] Launched impl_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/utils_1/imports/synth_1/Uart2DDR3_top.dcp with file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/Uart2DDR3_top.dcp
+launch_runs impl_1 -jobs 16
+[Sun Nov  5 13:27:11 2023] Launched synth_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/runme.log
+[Sun Nov  5 13:27:11 2023] Launched impl_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/utils_1/imports/synth_1/Uart2DDR3_top.dcp with file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/Uart2DDR3_top.dcp
+launch_runs impl_1 -jobs 16
+[Sun Nov  5 13:45:33 2023] Launched synth_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/runme.log
+[Sun Nov  5 13:45:33 2023] Launched impl_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/impl_1/runme.log
+set_property -dict [list \
+  CONFIG.ARESETN.INSERT_VIP {0} \
+  CONFIG.BOARD_MIG_PARAM {Custom} \
+  CONFIG.C0_ARESETN.INSERT_VIP {0} \
+  CONFIG.C0_CLOCK.INSERT_VIP {0} \
+  CONFIG.C0_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C0_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C0_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C0_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C0_RESET.INSERT_VIP {0} \
+  CONFIG.C0_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C0_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C0_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C1_ARESETN.INSERT_VIP {0} \
+  CONFIG.C1_CLOCK.INSERT_VIP {0} \
+  CONFIG.C1_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C1_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C1_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C1_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C1_RESET.INSERT_VIP {0} \
+  CONFIG.C1_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C1_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C1_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C2_ARESETN.INSERT_VIP {0} \
+  CONFIG.C2_CLOCK.INSERT_VIP {0} \
+  CONFIG.C2_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C2_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C2_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C2_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C2_RESET.INSERT_VIP {0} \
+  CONFIG.C2_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C2_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C2_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C3_ARESETN.INSERT_VIP {0} \
+  CONFIG.C3_CLOCK.INSERT_VIP {0} \
+  CONFIG.C3_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C3_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C3_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C3_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C3_RESET.INSERT_VIP {0} \
+  CONFIG.C3_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C3_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C3_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C4_ARESETN.INSERT_VIP {0} \
+  CONFIG.C4_CLOCK.INSERT_VIP {0} \
+  CONFIG.C4_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C4_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C4_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C4_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C4_RESET.INSERT_VIP {0} \
+  CONFIG.C4_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C4_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C4_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C5_ARESETN.INSERT_VIP {0} \
+  CONFIG.C5_CLOCK.INSERT_VIP {0} \
+  CONFIG.C5_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C5_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C5_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C5_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C5_RESET.INSERT_VIP {0} \
+  CONFIG.C5_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C5_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C5_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C6_ARESETN.INSERT_VIP {0} \
+  CONFIG.C6_CLOCK.INSERT_VIP {0} \
+  CONFIG.C6_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C6_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C6_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C6_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C6_RESET.INSERT_VIP {0} \
+  CONFIG.C6_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C6_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C6_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C7_ARESETN.INSERT_VIP {0} \
+  CONFIG.C7_CLOCK.INSERT_VIP {0} \
+  CONFIG.C7_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C7_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C7_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C7_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C7_RESET.INSERT_VIP {0} \
+  CONFIG.C7_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C7_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C7_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.CLK_REF_I.INSERT_VIP {0} \
+  CONFIG.CLOCK.INSERT_VIP {0} \
+  CONFIG.DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.MIG_DONT_TOUCH_PARAM {Custom} \
+  CONFIG.MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.RESET.INSERT_VIP {0} \
+  CONFIG.RESET_BOARD_INTERFACE {Custom} \
+  CONFIG.RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.S0_AXI.INSERT_VIP {0} \
+  CONFIG.S0_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S1_AXI.INSERT_VIP {0} \
+  CONFIG.S1_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S2_AXI.INSERT_VIP {0} \
+  CONFIG.S2_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S3_AXI.INSERT_VIP {0} \
+  CONFIG.S3_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S4_AXI.INSERT_VIP {0} \
+  CONFIG.S4_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S5_AXI.INSERT_VIP {0} \
+  CONFIG.S5_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S6_AXI.INSERT_VIP {0} \
+  CONFIG.S6_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S7_AXI.INSERT_VIP {0} \
+  CONFIG.S7_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.SYSTEM_RESET.INSERT_VIP {0} \
+  CONFIG.SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.S_AXI.INSERT_VIP {0} \
+  CONFIG.S_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.XML_INPUT_FILE {mig_a.prj} \
+] [get_ips mig_7series_0]
+generate_target {instantiation_template} [get_files d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mig_7series_0'...
+generate_target all [get_files  D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mig_7series_0'...
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 3364.492 ; gain = 240.812
+export_ip_user_files -of_objects [get_files D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -sync -force -quiet
+reset_run mig_7series_0_synth_1
+launch_runs mig_7series_0_synth_1 -jobs 16
+[Sun Nov  5 14:02:55 2023] Launched mig_7series_0_synth_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/mig_7series_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -directory D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.ip_user_files -ipstatic_source_dir D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/utils_1/imports/synth_1/Uart2DDR3_top.dcp with file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/Uart2DDR3_top.dcp
+launch_runs impl_1 -jobs 16
+[Sun Nov  5 14:08:13 2023] Launched synth_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/runme.log
+[Sun Nov  5 14:08:13 2023] Launched impl_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/impl_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a75tfgg484-1
+Top: Uart2DDR3_top
+INFO: [Device 21-403] Loading part xc7a75tfgg484-1
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 4028.414 ; gain = 390.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Uart2DDR3_top' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/top/Uart2DDR3_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rx_teach' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/uart/rx_teach.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rx_teach' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/uart/rx_teach.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Hdmi_top' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/Hdmi_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'asyn_rst_syn' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/asyn_rst_syn.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'asyn_rst_syn' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/asyn_rst_syn.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Control' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/VGA_Control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Control' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/VGA_Control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'encode' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/encode.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'encode' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/encode.v:46]
+INFO: [Synth 8-6157] synthesizing module 'serializer_10_to_1' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/serializer_10_to_1.v:26]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'serializer_10_to_1' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/serializer_10_to_1.v:26]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+INFO: [Synth 8-6155] done synthesizing module 'Hdmi_top' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/Hdmi_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_Ctrl' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/fifo/FIFO_Ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'wdata_fifo_w128x64_r128x64' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/wdata_fifo_w128x64_r128x64_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'wdata_fifo_w128x64_r128x64' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/wdata_fifo_w128x64_r128x64_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rdata_fifo_w128x64_r16x512' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/rdata_fifo_w128x64_r16x512_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'rdata_fifo_w128x64_r16x512' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/rdata_fifo_w128x64_r16x512_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_Ctrl' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/fifo/FIFO_Ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Axi_Mig_ctrl' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/axi/Axi_Mig_ctrl.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Axi_Mig_ctrl' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/axi/Axi_Mig_ctrl.v:21]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_0' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/mig_7series_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/mig_7series_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'device_temp' of module 'mig_7series_0' is unconnected for instance 'u_mig_7series_0' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/top/Uart2DDR3_top.v:213]
+WARNING: [Synth 8-7023] instance 'u_mig_7series_0' of module 'mig_7series_0' has 66 connections declared, but only 65 given [D:/three_verilog/Uart_ddr3_Hdmi/rtl/top/Uart2DDR3_top.v:213]
+INFO: [Synth 8-6155] done synthesizing module 'Uart2DDR3_top' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/top/Uart2DDR3_top.v:2]
+WARNING: [Synth 8-7129] Port m_axi_bid[3] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[2] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[1] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bresp[1] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bresp[0] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[3] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[2] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[1] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rresp[1] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rresp[0] in module Axi_Mig_ctrl is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4122.785 ; gain = 484.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4140.695 ; gain = 502.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4140.695 ; gain = 502.301
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'PLL_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.dcp' for cell 'PLL_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0.dcp' for cell 'u_mig_7series_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64.dcp' for cell 'FIFO_Ctrl/wdata_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512.dcp' for cell 'FIFO_Ctrl/rdata_fifo'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.205 . Memory (MB): peak = 4167.230 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 344 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'PLL_1/clk_100_IN' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:351]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:358]
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'PLL_0/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'PLL_0/inst'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'PLL_0/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'PLL_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'PLL_1/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'PLL_1/inst'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'PLL_1/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'PLL_1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/three_verilog/Uart_ddr3_Hdmi/rtl/pin.xdc]
+Finished Parsing XDC File [D:/three_verilog/Uart_ddr3_Hdmi/rtl/pin.xdc]
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64_clocks.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64_clocks.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512_clocks.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512_clocks.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 12 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4263.004 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 123 instances were transformed.
+  IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 96 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 8 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 4337.219 ; gain = 698.824
+53 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 4337.219 ; gain = 944.547
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 4402.652 ; gain = 48.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Uart2DDR3_top' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/top/Uart2DDR3_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rx_teach' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/uart/rx_teach.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rx_teach' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/uart/rx_teach.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Hdmi_top' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/Hdmi_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'asyn_rst_syn' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/asyn_rst_syn.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'asyn_rst_syn' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/asyn_rst_syn.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Control' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/VGA_Control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Control' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/VGA_Control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'encode' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/encode.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'encode' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/encode.v:46]
+INFO: [Synth 8-6157] synthesizing module 'serializer_10_to_1' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/serializer_10_to_1.v:26]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'serializer_10_to_1' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/serializer_10_to_1.v:26]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+INFO: [Synth 8-6155] done synthesizing module 'Hdmi_top' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/Hdmi_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_Ctrl' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/fifo/FIFO_Ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'wdata_fifo_w128x64_r128x64' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/wdata_fifo_w128x64_r128x64_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'wdata_fifo_w128x64_r128x64' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/wdata_fifo_w128x64_r128x64_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rdata_fifo_w128x64_r16x512' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/rdata_fifo_w128x64_r16x512_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'rdata_fifo_w128x64_r16x512' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/rdata_fifo_w128x64_r16x512_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_Ctrl' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/fifo/FIFO_Ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Axi_Mig_ctrl' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/axi/Axi_Mig_ctrl.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Axi_Mig_ctrl' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/axi/Axi_Mig_ctrl.v:21]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_0' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/mig_7series_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/mig_7series_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'device_temp' of module 'mig_7series_0' is unconnected for instance 'u_mig_7series_0' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/top/Uart2DDR3_top.v:213]
+WARNING: [Synth 8-7023] instance 'u_mig_7series_0' of module 'mig_7series_0' has 66 connections declared, but only 65 given [D:/three_verilog/Uart_ddr3_Hdmi/rtl/top/Uart2DDR3_top.v:213]
+INFO: [Synth 8-6155] done synthesizing module 'Uart2DDR3_top' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/top/Uart2DDR3_top.v:2]
+WARNING: [Synth 8-7129] Port m_axi_bid[3] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[2] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[1] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bresp[1] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bresp[0] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[3] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[2] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[1] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rresp[1] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rresp[0] in module Axi_Mig_ctrl is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4492.750 ; gain = 138.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4510.691 ; gain = 156.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4510.691 ; gain = 156.406
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'PLL_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.dcp' for cell 'PLL_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0.dcp' for cell 'u_mig_7series_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64.dcp' for cell 'FIFO_Ctrl/wdata_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512.dcp' for cell 'FIFO_Ctrl/rdata_fifo'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.214 . Memory (MB): peak = 4554.824 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 344 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'PLL_1/clk_100_IN' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:351]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:358]
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'PLL_0/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'PLL_0/inst'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'PLL_0/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'PLL_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'PLL_1/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'PLL_1/inst'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'PLL_1/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'PLL_1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/three_verilog/Uart_ddr3_Hdmi/rtl/pin.xdc]
+Finished Parsing XDC File [D:/three_verilog/Uart_ddr3_Hdmi/rtl/pin.xdc]
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64_clocks.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64_clocks.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512_clocks.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512_clocks.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 12 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 4554.824 ; gain = 200.539
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:351]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:358]
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'PLL_0/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'PLL_0/inst'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'PLL_0/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'PLL_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'PLL_1/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'PLL_1/inst'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'PLL_1/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'PLL_1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/three_verilog/Uart_ddr3_Hdmi/rtl/pin.xdc]
+Finished Parsing XDC File [D:/three_verilog/Uart_ddr3_Hdmi/rtl/pin.xdc]
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64_clocks.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64_clocks.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512_clocks.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512_clocks.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 12 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 4607.426 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Uart2DDR3_top' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/top/Uart2DDR3_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rx_teach' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/uart/rx_teach.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rx_teach' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/uart/rx_teach.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Hdmi_top' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/Hdmi_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'asyn_rst_syn' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/asyn_rst_syn.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'asyn_rst_syn' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/asyn_rst_syn.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Control' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/VGA_Control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Control' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/VGA_Control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'encode' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/encode.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'encode' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/encode.v:46]
+INFO: [Synth 8-6157] synthesizing module 'serializer_10_to_1' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/serializer_10_to_1.v:26]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'serializer_10_to_1' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/serializer_10_to_1.v:26]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+INFO: [Synth 8-6155] done synthesizing module 'Hdmi_top' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/hdmi/Hdmi_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_Ctrl' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/fifo/FIFO_Ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'wdata_fifo_w128x64_r128x64' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/wdata_fifo_w128x64_r128x64_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'wdata_fifo_w128x64_r128x64' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/wdata_fifo_w128x64_r128x64_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rdata_fifo_w128x64_r16x512' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/rdata_fifo_w128x64_r16x512_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'rdata_fifo_w128x64_r16x512' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/rdata_fifo_w128x64_r16x512_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_Ctrl' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/fifo/FIFO_Ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Axi_Mig_ctrl' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/axi/Axi_Mig_ctrl.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Axi_Mig_ctrl' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/axi/Axi_Mig_ctrl.v:21]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_0' [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/mig_7series_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/project_1/.Xil/Vivado-20800-LAPTOP-H1858A6E/realtime/mig_7series_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'device_temp' of module 'mig_7series_0' is unconnected for instance 'u_mig_7series_0' [D:/three_verilog/Uart_ddr3_Hdmi/rtl/top/Uart2DDR3_top.v:213]
+WARNING: [Synth 8-7023] instance 'u_mig_7series_0' of module 'mig_7series_0' has 66 connections declared, but only 65 given [D:/three_verilog/Uart_ddr3_Hdmi/rtl/top/Uart2DDR3_top.v:213]
+INFO: [Synth 8-6155] done synthesizing module 'Uart2DDR3_top' (0#1) [D:/three_verilog/Uart_ddr3_Hdmi/rtl/top/Uart2DDR3_top.v:2]
+WARNING: [Synth 8-7129] Port m_axi_bid[3] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[2] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[1] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bresp[1] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bresp[0] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[3] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[2] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[1] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rresp[1] in module Axi_Mig_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rresp[0] in module Axi_Mig_ctrl is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4651.168 ; gain = 43.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4675.059 ; gain = 67.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4675.059 ; gain = 67.633
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'PLL_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.dcp' for cell 'PLL_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0.dcp' for cell 'u_mig_7series_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64.dcp' for cell 'FIFO_Ctrl/wdata_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'd:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512.dcp' for cell 'FIFO_Ctrl/rdata_fifo'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.206 . Memory (MB): peak = 4718.129 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 344 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'PLL_1/clk_100_IN' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:351]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:358]
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'PLL_0/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'PLL_0/inst'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'PLL_0/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'PLL_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'PLL_1/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'PLL_1/inst'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'PLL_1/inst'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'PLL_1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/three_verilog/Uart_ddr3_Hdmi/rtl/pin.xdc]
+Finished Parsing XDC File [D:/three_verilog/Uart_ddr3_Hdmi/rtl/pin.xdc]
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64_clocks.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/wdata_fifo_w128x64_r128x64/wdata_fifo_w128x64_r128x64_clocks.xdc] for cell 'FIFO_Ctrl/wdata_fifo/U0'
+Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512_clocks.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+Finished Parsing XDC File [d:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.gen/sources_1/ip/rdata_fifo_w128x64_r16x512/rdata_fifo_w128x64_r16x512_clocks.xdc] for cell 'FIFO_Ctrl/rdata_fifo/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Uart2DDR3_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Uart2DDR3_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 12 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 4718.129 ; gain = 110.703
+close_design
+set_property CONFIG.PRIM_SOURCE {Global_buffer} [get_ips clk_wiz_1]
+generate_target all [get_files  D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_1'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: clk_wiz_1
+export_ip_user_files -of_objects [get_files D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_1_synth_1
+launch_runs clk_wiz_1_synth_1 -jobs 16
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: clk_wiz_1
+[Sun Nov  5 14:53:04 2023] Launched clk_wiz_1_synth_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/clk_wiz_1_synth_1/runme.log
+export_simulation -of_objects [get_files D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] -directory D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.ip_user_files -ipstatic_source_dir D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/utils_1/imports/synth_1/Uart2DDR3_top.dcp with file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/Uart2DDR3_top.dcp
+launch_runs synth_1 -jobs 16
+[Sun Nov  5 14:53:56 2023] Launched synth_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Sun Nov  5 14:55:29 2023] Launched impl_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/impl_1/runme.log
+close_project
+open_project D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -jobs 16
+[Sun Nov  5 15:17:01 2023] Launched impl_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/utils_1/imports/synth_1/Uart2DDR3_top.dcp with file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/Uart2DDR3_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Nov  5 15:38:30 2023] Launched synth_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/runme.log
+[Sun Nov  5 15:38:30 2023] Launched impl_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-07:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299635414
+open_hw_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 6522.035 ; gain = 1803.906
+set_property PROGRAM.FILE {D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/impl_1/Uart2DDR3_top.bit} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/impl_1/Uart2DDR3_top.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.srcs/utils_1/imports/synth_1/Uart2DDR3_top.dcp with file D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/Uart2DDR3_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Nov  5 15:47:47 2023] Launched synth_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/synth_1/runme.log
+[Sun Nov  5 15:47:47 2023] Launched impl_1...
+Run output will be captured here: D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.192 . Memory (MB): peak = 6583.535 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 354 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.934 . Memory (MB): peak = 7264.168 ; gain = 0.000
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 7264.168 ; gain = 680.633
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {D:/three_verilog/Uart_ddr3_Hdmi/project_1/project_1.runs/impl_1/Uart2DDR3_top.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  5 15:51:54 2023...
